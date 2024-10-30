@@ -1,0 +1,175 @@
+
+#srchCnt
+{
+    margin: 0 0 0 40px;
+}
+
+
+.lstCnt
+{
+    margin: 0 0 5px 0;
+    list-style: none;
+}
+
+#srchResContainer
+{
+    position: absolute;
+    width: 880px;
+    min-height: 325px;
+    border: 1px solid #E2E2E2;
+    overflow: hidden;
+    padding: 10px 20px 10px 20px;
+    background-color: White;
+    z-index: 99999;
+    -moz-box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+/*search list*/
+#srchRes
+{
+    float: left;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+/*individual search list items*/
+#srchRes li
+{
+    cursor: default;
+    margin: 0 0 4px 10px;
+    list-style: none;
+}
+
+/*image container*/
+.imgcon
+{
+    display: inline-block;
+    text-align: center;
+}
+
+/*images*/
+#imgs
+{
+    float: left;
+}
+
+#brand
+{
+    position: absolute;
+    color: #D1CFCF;
+    float: right;
+    display: none;
+    font-size: 1.2em;
+}
+
+.brandLnk, .brandLnk:visited, .brandLnk:link
+{
+    color: #D1CFCF;
+    font-size: 1.0em;
+    list-style: none;
+}
+
+.brandLnk:hover
+{
+    color: #FF7F00;
+}
+
+#imgs img
+{
+    display: inline;
+    margin: 0 10px 0 0;
+    border: 1px solid #F7F7F7;
+    height: 125px;
+}
+
+.imgPct
+{
+}
+
+.imgCpt
+{
+    text-align: center;
+    width: 125px;
+    font-size: 1.0em;
+    width: 100%;
+}
+
+.clr
+{
+    clear: both;
+}
+
+.bld
+{
+    font-weight: bold;
+}
+
+
+.lstItmNormal
+{
+    color: Black;
+    width: 250px;
+}
+
+.lstItmOver
+{
+    color: Red;
+    background-color: #DBD9D9;
+    width: 250px;
+}
+
+.pressEnterToSearch
+{
+    font-size: 1.0em;
+    margin: 10px 0 0 0;
+    font-style: italic;
+}
+
+.filters a{
+    display: inline-block;
+    background-color: #a1d6b7;
+    padding: 7px;
+    border-radius: 3px;
+    color: #FFF !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 10px;
+    margin-right: 4px;
+    margin-bottom: 5px;
+
+    -webkit-transition: all 300ms ease-in-out 0ms;
+    transition: all 300ms ease-in-out 0ms;
+}
+.filters a:hover{
+    color: #FFF !important;
+}
+.filters a:after{
+    content: " x";
+    position: relative;
+    opacity: 0;
+    top: -20px;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+.filters a:hover::after{
+    opacity: 1;
+    top: 0px;
+}
+
+a.options{
+    display: inline-block;
+    background-color: #35353a;
+    padding: 7px;
+    border-radius: 3px;
+    color: #FFF !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 10px;
+    margin-right: 4px;
+    margin-bottom: 5px;
+}
+a.options:hover::after{
+    content: " +";
+}

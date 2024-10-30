@@ -1,0 +1,82 @@
+h2{
+    transition: all 300ms ease-in-out 0ms;
+    -webkit-transition: all 300ms ease-in-out 0;
+}
+.inactiveStep{
+    color: #bbbbbb;
+}
+
+.glyphicon-refresh-animate {
+    -animation: spin .7s infinite linear;
+    -webkit-animation: spin2 .7s infinite linear;
+}
+
+.mocoStatusItem{
+    background-color: #f1f1f1;
+    margin-right: 5px;
+    width: 23%;
+    text-align: center;
+    padding: 15px;
+    min-height: 80px;
+}
+.mocoStatusItem strong{
+    display: block;
+    font-size: 17px;
+}
+.mocoStatusItem span{
+    font-size: 18px;
+}
+
+.dataTables_length{
+    text-align: left;
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}
+.h3info {
+    background-color: #76889a;
+    color: #ffffff;
+    font-size: 11px;
+    padding: 8px;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+.tab-pane .col-md-4 {
+    border-right: 1px dashed #d4d0d0;
+}
+#updateSaveButton{
+    margin: 30px;
+    width: 70%;
+}
+
+#updateSaveButton .glyphicon{
+    position: relative;
+    opacity: 0;
+    top: -20px;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+#updateSaveButton:hover .glyphicon{
+    opacity: 1;
+    top: 0px;
+}
+#save1h3, #save2h3{
+    color: #97badc;
+    text-align: center;
+    opacity:0;
+    margin:0;
+    margin-top: 20px;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+#save1h3{
+    font-size: 50px;
+    margin-top: 40px;
+}
